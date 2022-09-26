@@ -5,7 +5,7 @@ from django.http import HttpResponse
 # Create your tests here.
 
 
-def  create_customer(request):
-    return HttpResponse("modulo de  clientes")
+def  create_market(request):
+    return HttpResponse("modulo de  tienda virtual")
 
 
