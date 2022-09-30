@@ -57,11 +57,12 @@ MIDDLEWARE = [
 REST_FRAMEWORK = {
     
     'DEFAULT_AUTHENTICATION_CLASSES':(
-   
+         
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES':(
-    'Rest_framework.permissions.AllowAny',   
+      'rest_framework.permissions.AllowAny',
+       
     )
    
 }
@@ -92,27 +93,27 @@ WSGI_APPLICATION = 'authProject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+"""""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
+"""
 # Create your pool conection for database  postgresql_psycopg2 (LINK-PETS)
 
-"""""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':'delos3s1i9mn6b',
-        'USER': 'jlccesadrjrnbj',
-        'PASSWORD': ' 302a9c7de2627f1bc6a19a0798081f5cae12df0d360d67a18fe7f00dea60d374',
-        'HOST': 'ec2-3-219-19-205.compute-1.amazonaws.com',
+        'NAME':'d3smqj5fvn5j1i',
+        'USER': 'boxxieppyuugwr',
+        'PASSWORD': '65d3654fd8e465f698341192d39abbedcec5f30e6abb0c54086885a27c93cc9b',
+        'HOST': 'ec2-54-82-205-3.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
-"""
+
 
 
 #  capa  de  toke here security

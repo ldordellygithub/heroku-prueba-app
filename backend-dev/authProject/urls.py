@@ -16,16 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from authApp.login import login
-from authApp.views.users.create import create_user
 from authApp.views.market.create import create_market
 from authApp.views.customer.create import create_customer
+from authApp.views.users.create import create
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', login),
-    path('users/create', create_user),
     path('market/create', create_market),
     path('customers/create', create_customer),
-    
+    path('users/list', create.as_view({'get':'list'})),
    
 ]
